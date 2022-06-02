@@ -7,7 +7,7 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css-ext/style.css">
+        <!-- <link rel="stylesheet" href="../css-ext/style.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>TubeStream</title>
@@ -108,18 +108,23 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
-                                <button class="btn btn-info text-white">
-                                    <i class="fa fa-plus" aria-hidden="true"></i> Service Instruction
-                                </button>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <span class="badge rounded-pill bg-light text-dark text-wrap">DRAFT</span>
+                                <div class="col-md-2">
+                                    <select class="form-select bg-light" aria-label="Default select example">
+                                        <option selected>&#x29E9; Service Instruction</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="d-grid d-md-flex justify-content-md-end">
+                                    <span class="badge rounded-pill bg-light text-dark lh-lg">DRAFT</span>
                                 </div>
                             </div>
                             <form class="row justify-content-end g-3 pt-3">
                                 <div class="col-md-2">
                                     <label for="selectVendor" class="form-label">Assigned Vendor</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
+                                    <select class="form-select bg-light" aria-label="Default select example">
+                                        <option selected>Assigned Vendor</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
@@ -127,16 +132,16 @@
                                 </div>
                                 <div class="col-md-2">
                                     <label for="inputAttention" class="form-label">Attention Of</label>
-                                    <input type="text" class="form-control" id="inputPassword4">
+                                    <input type="text" class="form-control bg-light" id="inputPassword4">
                                 </div>
                                 <div class="col-md-2">
                                     <label for="inputEmail4" class="form-label">Quation No.</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
+                                    <input type="email" class="form-control bg-light" id="inputEmail4">
                                 </div>
                                 <div class="col-md-2">
                                     <label for="selectInvoice" class="form-label">Invoice To</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
+                                    <select class="form-select bg-light" aria-label="Default select example">
+                                        <option selected>Invoice To</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
@@ -145,19 +150,19 @@
                                 <!-- <div class="vr"></div> -->
                                 <div class="col-md-2">
                                     <label for="selectCustomer" class="form-label">Customer - Contract</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
+                                    <select class="form-select bg-light" aria-label="Default select example">
+                                        <option selected>Customer - Contract</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
                                 </div>
                             </form>
-                            <form class="row justify-content-end g-3 pt-3 pb-2">
+                            <form class="row justify-content-end g-2 pt-3">
                                 <div class="col-md-8">
                                     <label for="selectAddress" class="form-label">Vendor Address</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
+                                    <select class="form-select bg-light" aria-label="Default select example">
+                                        <option selected>Vendor Address</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
@@ -166,18 +171,19 @@
                                 <!-- <div class="vr"></div> -->
                                 <div class="col-md-2">
                                     <label for="selectCustPO" class="form-label">Customer PO No.</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
+                                    <select class="form-select bg-light" aria-label="Default select example">
+                                        <option selected>Customer PO No.</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
                                     </select>
+                                </div>
                             </form>
-                        </div>
                         <hr>
+
                         <h5>Cost Detail</h5>
                         <div class="table-responsive pt-2">
-                            <table class="table">
+                            <table class="table align-middle">
                                 <thead class="table-secondary">
                                     <tr>
                                         <th>Description</th>
@@ -198,37 +204,36 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <input type="text" class="form-control" id="inputDesc">
+                                            <input type="text" class="form-control bg-light" id="inputDesc" value="">
                                         </td>
                                         <td>
-                                            <input type="text" class="form-control" id="inputQty">
+                                            <input type="text" class="form-control bg-light" id="inputQty" value="">
                                         </td>
                                         <td>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>Open this select menu</option>
+                                            <select class="form-select bg-light" aria-label="Default select example">
+                                                <option selected>UOM</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
                                                 <option value="3">Three</option>
                                             </select>
                                         </td>
                                         <td>
-                                            <input type="text" class="form-control" id="inputUnitPrice" value="Unit Price">
+                                            <input type="text" class="form-control bg-light" id="inputUnitPrice" value="">
                                         </td>
                                         <td>
-                                            <input type="text" class="form-control" id="inputDiscount" value="Discount">
+                                            <input type="text" class="form-control bg-light" id="inputDiscount" value="">
                                         </td>
                                         <td>
-                                            <input type="text" class="form-control" id="inputGST" value="GST">
+                                            <input type="text" class="form-control bg-light" id="inputGST" value="">
                                         </td>
                                         <td>
                                             <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
                                         </td>
                                         <td>
-                                            <select class="form-select" aria-label="Default select example">
+                                            <select class="form-select bg-light" aria-label="Default select example">
                                                 <option selected>Currency</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
+                                                <option value="1">USD</option>
+                                                <option value="2">AED</option>
                                             </select>
                                         </td>
                                         <td>
@@ -241,11 +246,10 @@
                                             <label for="Total" class="form-label">Total</label>
                                         </td>
                                         <td>
-                                            <select class="form-select" aria-label="Change To">
-                                                <option selected>MITME 1</option>
-                                                <option value="1">MITME 2</option>
-                                                <option value="2">MITME 3</option>
-                                                <option value="3">MITME 4</option>
+                                            <select class="form-select bg-light" aria-label="Change To">
+                                                <option selected>Select an Option</option>
+                                                <option value="1">MITME</option>
+                                                <option value="2">Customer</option>
                                             </select>
                                         </td>
                                         <td>
@@ -259,12 +263,12 @@
                         </div>
 
                         <div class="d-flex justify-content-between">
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <p>Exchange Rate <b> 1 USD = 3.6725 AED </b></p>
                             </div>
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <div class="row">
-                                    <div class="col-md-3">
+                            <div class="d-grid d-md-flex justify-content-md-end">
+                                <div class="row row-cols-auto">
+                                    <div class="col-md-3 bg-light">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <label for="labelAED" class="form-label">AED (total)</label>
@@ -276,7 +280,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 bg-light">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <label for="labelValAmount" class="form-label">0.00</label>
@@ -288,7 +292,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 bg-light">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <label for="labelSubTotal" class="form-label">1,744.44</label>
@@ -300,7 +304,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 bg-light">
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <label for="labelTotal" class="form-label">1,744.44</label>
@@ -326,8 +330,20 @@
 
                         <hr>
                         <!-- start attachment and notes -->
-
-                        <!-- end attachment and notes -->
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">File Attachment</label>
+                                    <input class="form-control" type="file" id="formFile" multiple>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="textAreaNotes" class="form-label">Notes</label>
+                                    <textarea class="form-control bg-light" id="textAreaNotes" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -343,11 +359,11 @@
 
                             <form class="row g-3">
                                 <div class="col-md-4">
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Link To :</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                    <select class="form-select bg-light" aria-label="Default select example">
+                                        <option selected>Link To</option>
+                                        <option value="1">Link One</option>
+                                        <option value="2">Link Two</option>
+                                        <option value="3">Link Three</option>
                                     </select>
                                 </div>
                                 <div class="col-auto">
@@ -365,13 +381,15 @@
                             <div class="d-flex justify-content-end">
                                 <form class="row">
                                     <div class="col-md-3">
-                                        <button type="submit" class="btn btn-light mb-2">Cancel</button>
+                                        <button type="reset" class="btn btn-light text-dark mb-2">Cancel</button>
                                     </div>
                                     <div class="col-auto">
-                                        <button type="submit" class="btn btn-light mb-1">Save as Draft</button>
+                                        <button type="button" class="btn btn-light text-dark mb-1">Save as Draft</button>
                                     </div>
                                     <div class="col-auto">
-                                        <button type="submit" class="btn btn-info mb-2">Submit</button>
+                                        <a href="../web/invoiceHome.html" class="btn btn-info text-white" role="button">
+                                            Submit
+                                        </a>
                                     </div>
                                 </form>
                             </div>
@@ -383,5 +401,8 @@
         
         <!-- script bootstrap 5.1.3 -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
     </body>
 </html>

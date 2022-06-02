@@ -1,0 +1,3 @@
+1. file createHome.html adalah tampilan halaman utamanya.
+2. file formCreateEdit.html adalah untuk tampilan bisa digunakan di halaman tambahData, EditData.
+3. file invoiceHome.html adalah untuk menampilkan halaman home editData dan terminateData serta untuk receive email ke vendor

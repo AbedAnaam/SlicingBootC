@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="../css-ext/style.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>TubeStream</title>
+    </head>
+    <body>
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../img/ts-min.png" width="auto" height="30px"   class="d-inline-block align-top" alt="">
+                        <span class="menu-collapsed"></span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <form class="d-flex">
+                        <a href="#" class="nav-link link-warning">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                            <span class="text-light"><b>353</b></span>
+                        </a>
+                        <a href="#" class="nav-link link-warning">
+                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </a>
+                        <div class="vr text-light" style="width: 3px;"></div>
+                        <a href="#" class="nav-link">
+                            <span class="text-light text-center">Good Afternoon, Admin </span>
+                        </a>
+                        <a href="#" class="nav-link link-light">
+                            <i class="fa fa-user-circle-o " aria-hidden="true"></i>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start left sidebar and right content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-auto bg-dark sticky-top border-top border-info border-3">
+                    <div class="d-flex flex-sm-column flex-row flex-nowrap bg-dark align-items-center sticky-top">
+                        <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center justify-content-between w-100 px-3 align-items-center">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-light py-3 px-2">
+                                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link link-light py-3 px-2">
+                                    <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link link-light py-3 px-2">
+                                    <i class="fa fa-table fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link link-light py-3 px-2">
+                                    <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link link-light py-3 px-2">
+                                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center justify-content-center p-3 link-light text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Start content side -->
+                <div class="col-sm-6 col-md col-lg p-4 min-vh-100 bg-light">
+                    <!-- content -->
+                    <h4>3rd Party Instruction</h4>
+                    <!-- breadcrumb -->
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Vendor Management</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">3rd Party Instruction</li>
+                        </ol>
+                    </nav>
+                    <!-- end breadcrumb -->
+                    <div class="row pb-3 justify-content-end">
+                        <div class="col-md-auto">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i> Send Email
+                            </button>
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="fa fa-file-code-o" aria-hidden="true"></i> Export
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- start first card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-start pb-2">
+                                <div class="col-md-2">
+                                    <a href="../web/createHome.html" type="button" class="btn btn-light">
+                                        <i class="fa fa-chevron-left" aria-hidden="true"></i> Back
+                                    </a>
+                                </div>
+                            </div>
+
+                            <form class="row justify-content-end g-3 pt-3">
+                                <div class="col-md-2">
+                                    <label for="selectVendor" class="form-label">Type</label>
+                                    <p class="text-start fw-bold">
+                                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                        Service Instruction
+                                    </p>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="selectVendor" class="form-label">SI No.</label>
+                                    <p class="text-start fw-bold">
+                                        SI-2022-0001
+                                    </p>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAttention" class="form-label">Transfer No.</label>
+                                    <button type="button" class="btn btn-light">
+                                        <i class="fa fa-file-code-o" aria-hidden="true"></i> INSP-2020-0001
+                                    </button>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputEmail4" class="form-label">Customer</label>
+                                    <p class="text-start fw-bold">
+                                        ADNOC - Hail & Gasha
+                                    </p>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="selectInvoice" class="form-label">Customer PO</label>
+                                    <p class="text-start fw-bold">
+                                        P0001
+                                    </p>
+                                </div>
+                                <!-- <div class="vr"></div> -->
+                                <div class="col-md-2">
+                                    <label for="selectCustomer" class="form-label">Status</label>
+                                    <div class="d-grid d-md-flex">
+                                        <span class="badge rounded-pill bg-light text-dark lh-lg">IN PROGRESS</span>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <form class="row justify-content-end g-3 pt-3 pb-2">
+                                <div class="col-md-2">
+                                    <label for="selectAddress" class="form-label">Attention Of</label>
+                                    <p class="text-start fw-bold">
+                                        Rigrep Transportation
+                                    </p>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="selectCustPO" class="form-label">Assigned Vendor</label>
+                                    <p class="text-start fw-bold">
+                                        Amarit & Associates Logistics Co Ltd
+                                    </p>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="selectCustPO" class="form-label">Vendor Quation Number</label>
+                                    <p class="text-start text-uppercase fw-bold">
+                                        Amarit & Associates Logistics Co Ltd
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="selectCustPO" class="form-label">Vendor Address</label>
+                                    <p class="text-start text-uppercase fw-bold">
+                                        1 SOI Pridi Phanomyong 28 (THANIPATTANA)
+                                    </p>
+                                </div>
+                            </form>
+                        <hr>
+                        <h5>Cost Detail</h5>
+                        <div class="table-responsive pt-2">
+                            <table class="table align-middle">
+                                <thead class="table-secondary">
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>QTY</th>
+                                        <th>UOM</th>
+                                        <th>Unit Price</th>
+                                        <th>Discount (%)</th>
+                                        <th>GST/VAT(%)</th>
+                                        <th></th>
+                                        <th>Currency</th>
+                                        <th>Val Amount</th>
+                                        <th>Sub Total</th>
+                                        <th>Total</th>
+                                        <th>Change To</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="clickable-row" data-href='https://google.com'>
+                                        <td>
+                                            <input type="text" class="form-control bg-light" id="inputDesc" value="">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control bg-light" id="inputQty" value="">
+                                        </td>
+                                        <td>
+                                            <select class="form-select bg-light" aria-label="Default select example">
+                                                <option selected>UOM</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control bg-light" id="inputUnitPrice" value="">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control bg-light" id="inputDiscount" value="">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control bg-light" id="inputGST" value="">
+                                        </td>
+                                        <td>
+                                            <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
+                                        </td>
+                                        <td>
+                                            <select class="form-select bg-light" aria-label="Default select example">
+                                                <option selected>Currency</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <label for="valAmount" class="form-label">0.00</label>
+                                        </td>
+                                        <td>
+                                            <label for="subTotal" class="form-label">475.00</label>
+                                        </td>
+                                        <td>
+                                            <label for="Total" class="form-label">Total</label>
+                                        </td>
+                                        <td>
+                                            <select class="form-select bg-light" aria-label="Change To">
+                                                <option selected>MITME 1</option>
+                                                <option value="1">MITME 2</option>
+                                                <option value="2">MITME 3</option>
+                                                <option value="3">MITME 4</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <button type="submit" class="btn btn-secondary text-white">
+                                                <i class="fa fa-minus fa-1x" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="col-md-3">
+                                <p>Exchange Rate <b> 1 USD = 3.6725 AED </b></p>
+                            </div>
+                            <div class="d-grid d-md-flex justify-content-md-end">
+                                <div class="row row-cols-auto">
+                                    <div class="col-md-3 bg-light">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="labelAED" class="form-label">AED (total)</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="labelAED" class="form-label">USD (total)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 bg-light">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="labelValAmount" class="form-label">0.00</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="labelValAmount" class="form-label">0.00</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 bg-light">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="labelSubTotal" class="form-label">1,744.44</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="labelSubTotal" class="form-label">1,744.44</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 bg-light">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="labelTotal" class="form-label">1,744.44</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label for="labelTotal" class="form-label">1,744.44</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <span class="bg-white"></span>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="submit" class="btn btn-info btn-md">
+                                            <i class="fa fa-plus fa-1x" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <!-- start attachment and notes -->
+                        <div class="row justify-content-between">
+                            <div class="col-4">
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">File Attachment</label>
+                                    <input class="form-control" type="file" id="formFile" multiple>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="textAreaNotes" class="form-label">Notes</label>
+                                    <textarea class="form-control bg-light" id="textAreaNotes" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between pt-3 pb-2">
+                            <div class="col-md-2">
+                                <p class="h5">
+                                    Vendor Invoice
+                                </p>
+                            </div>
+                            <div class="row justify-content-md-end">
+                                <div class="col-md-auto">
+                                    <button type="button" class="btn btn-info text-white">
+                                        <i class="fa fa-plus" aria-hidden="true"></i> Add Vendor Invoice
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive table-bordered pt-2">
+                            <table class="table align-middle">
+                                <thead class="table-secondary">
+                                    <tr>
+                                        <th>Invoice No.</th>
+                                        <th>Invoice Attachment</th>
+                                        <th>Supporting Document</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="text" class="form-control bg-light" id="inputDesc" value="">
+                                        </td>
+                                        <td>
+                                            <input type="text" class="form-control bg-light" id="inputQty" value="">
+                                        </td>
+                                        <td>
+                                            <select class="form-select bg-light" aria-label="Default select example">
+                                                <option selected>UOM</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <button type="submit" class="btn btn-secondary text-white">
+                                                <i class="fa fa-minus fa-1x" aria-hidden="true"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            <p class="text-center align-middle">
+                                                Click the button if all vendor invoices have been received
+                                                <button class="btn btn-info btn-md text-white" data-bs-toggle="modal" data-bs-target="#invoiceModal">
+                                                    All Received
+                                                </button>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="invoiceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>Are you sure all Vendor invoices have been received?</p>
+                                        <br>
+                                        <p><small>Once confirmed, Vendor Invoice of the 3rd Party Instruction will be closed</small></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                        <button type="submit" class="btn btn-info text-white">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg pt-4 bg-light">
+                    start third card
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-end">
+                                <form class="row">
+                                    <div class="col-md-3">
+                                        <button type="reset" class="btn btn-light mb-2">Cancel</button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-light mb-1">Save as Draft</button>
+                                    </div>
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-info mb-2">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+        <!-- script bootstrap 5.1.3 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
+        <script>
+            jQuery(document).ready(function($) {
+                $(".clickable-row").click(function() {
+                    window.location = $(this).data("href");
+                });
+            });
+        </script>
+    </body>
+</html>
